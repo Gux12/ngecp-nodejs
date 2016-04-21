@@ -1,0 +1,282 @@
+<!DOCTYPE HTML>
+<html>
+<script type="text/javascript">
+var isBuilderMode = false;
+var winFixWidth = 1024,
+    winFixHeight = 1024;
+var ResizePolicy = 3;
+</script>
+
+<head>
+    <title>New Project-EMP.VRP3D.COM</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0'>
+    <meta name="apple-touch-fullscreen" content="YES">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <script src="../js/web3D/js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="../js/web3D/js/three.js"></script>
+    <script src="../js/web3D/js/TrackballControls.min.js" type="text/javascript"></script>
+    <script src="../js/web3D/js/JsonIndexLoader.js"></script>
+    <script src="../js/web3D/js/empBuilder.min.js" type="text/javascript"></script>
+    <script src="../js/web3D/js/empRuntime.min.js" type="text/javascript"></script>
+    <script src="../js/web3D/js/animo.min.js" type="text/javascript"></script>
+    <script src="../js/web3D/js/stats.min.js" type="text/javascript"></script>
+    <script src="../js/web3D/js/Detector.min.js" type="text/javascript"></script>
+    <script src="../js/web3D/js/Tween.min.js" type="text/javascript"></script>
+    <link href="../js/web3D/js/animate-animo.css" rel="stylesheet" type="text/css">
+    <script src="../js/web3D/js/jgestures.min.js" type="text/javascript"></script>
+    <script src="../js/web3D/js/pageSwitch.min.js" type="text/javascript"></script>
+</head>
+
+<body style="position:absolute;  background-color:rgba(255,255,255,0);background-size:100% 100%;background-repeat:no-repeat; background-attachment:fixed; margin-top: 0px;margin-bottom: 0px;margin-left: 0px;margin-right: 0px;-webkit-touch-callout:none;-webkit-user-select:none;">
+    <table class="table" style="text-align: right;z-index: 1000;position: relative;">
+        <tbody>
+            <tr>
+                <th><strong>商品名称</strong></th>
+                <td>
+                    西装
+                </td>
+            </tr>
+            <tr>
+                <th><strong>性别</strong></th>
+                <td>
+                    <select id="cloth-gender" class="form-control select select-inverse select-block">
+                        <option value="man" check>男</option>
+                        <option value="woman">女</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th><strong>尺寸</strong></th>
+                <td>
+                    <select id="cloth-size" class="form-control select select-inverse select-block">
+                        <option value="big" check>大号</option>
+                        <option value="mid">中号</option>
+                        <option value="small">小号</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th><strong>颜色</strong></th>
+                <td>
+                    <select id="cloth-color" class="form-control select select-inverse select-block">
+                        <option value="white" check>白色</option>
+                        <option value="blue">蓝色</option>
+                        <option value="red">红色</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th><strong>面料</strong></th>
+                <td>
+                    <select class="form-control select select-inverse select-block">
+                        <option value="羊毛与涤纶混纺">羊毛与涤纶混纺</option>
+                        <option value="羊毛与粘胶混纺">羊毛与粘胶混纺</option>
+                        <option value="纯羊毛精纺">纯羊毛精纺</option>
+                        <option value="纯羊毛粗纺">纯羊毛粗纺</option>
+                        <option value="纯化纤仿毛">纯化纤仿毛</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th><strong>领型</strong></th>
+                <td>
+                    <select class="form-control select select-inverse select-block">
+                        <option value="平驳领">平驳领</option>
+                        <option value="戗驳领">戗驳领</option>
+                        <option value="青果领">青果领</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th><strong>扣型</strong></th>
+                <td>
+                    <select class="form-control select select-inverse select-block">
+                        <option value="单扣">单扣</option>
+                        <option value="双扣">双扣</option>
+                        <option value="三扣">三扣</option>
+                    </select>
+                </td>
+            </tr>
+        </tbody>
+            <script src="/socket.io/socket.io.js"></script>
+</body>
+
+</html>
+<script type="text/javascript">
+var EmpFirstShowPage = {
+    'pages': ['328025549-555962254-2129857797-1769827767', 'END'],
+    'first': 0
+};
+var PageInitFunc = {};
+var PageExitFunc = {};
+
+window.addEventListener("load", (function() {
+    if (PageInitFunc['328025549-555962254-2129857797-1769827767']) PageInitFunc['328025549-555962254-2129857797-1769827767']();
+}), false);
+</script>
+<script type="text/javascript">
+(function() { /* page:  汽车展示合_1 */
+    var pageElement = empGetElementByID('328025549-555962254-2129857797-1769827767', 'div', null);
+    pageElement.style.cssText = "background-color:rgba(255,0,0,0); position:absolute;margin:0px 0px 0px 0px ;width:1024px;height:1024px;  z-index: 1;overflow:hidden;display:block;";
+    PageInitFunc['328025549-555962254-2129857797-1769827767'] = (function() { /*empShowElementByID('1421555384-1552117900-707152488-937763923', 'hidden');  empShowElementByID('1691582227-1485258816-650407005-2039880589', 'visible');  empShowElementByID('513083203-513561875-706164739-1153835674', 'hidden');*/
+        _124324387819802023771476550153307121760.enable();
+    });
+    PageExitFunc['328025549-555962254-2129857797-1769827767'] = (function() {
+        _124324387819802023771476550153307121760.disable();
+    });
+})();
+
+(function() { /*  3DScene:  3D场景_1  */
+    var pageElement213 = empGetElementByID('328025549-555962254-2129857797-1769827767', 'div', null);
+    var itemElement = empGetElementByID('1243243878-1980202377-1476550153-307121760', 'div', pageElement213);
+    pageElement213.appendChild(itemElement);
+    itemElement.style.cssText = "pointer-events:auto;position:absolute;left:0px;top:0px;width:1024px;height:1024px;opacity:1;transform-origin:50% 50%;-webkit-transform-origin:50% 50%;-moz-transform-origin:50% 50%;-o-transform-origin:50% 50%;-ms-transform-origin:50% 50%;transform:translate(0px,0px) rotate(0deg) skew(0deg,0deg) scale(1,1);  z-index:8;";
+})();
+var _124324387819802023771476550153307121760 = create3dScene('1243243878-1980202377-1476550153-307121760', 1024, 1024, 0xffffff, 0);
+if (_124324387819802023771476550153307121760) {
+    (function() {
+        //car1 23,0,0  47,13,33
+        //car2     8015,6463,9381
+        var EmpCamera = _124324387819802023771476550153307121760.camera;
+        EmpCamera.fov = 45;
+        EmpCamera.near = 1;
+        EmpCamera.far = 10000;
+        EmpCamera.position.set(-12.5, 75.6, 367.7);
+        EmpCamera.lookAt(0, 120, 0);
+        EmpCamera.up.set(0, 1, 0);
+        _124324387819802023771476550153307121760.controls.target.set(0, 120, 0);
+        _124324387819802023771476550153307121760.controls.minDistance = 100;
+        _124324387819802023771476550153307121760.controls.maxDistance = 10000;
+        EmpCamera.updateProjectionMatrix();
+    })();
+
+    _124324387819802023771476550153307121760.loadEmpObjs('../cloth3/tsinghua2_ani/index.js', 'cloth', '', {
+        computNormal: true,
+        autoPlay: true,
+        autoLookAtCenter: false
+    });
+
+    (function() {
+        var defaultLight = _124324387819802023771476550153307121760.findObjectByName('_1433554002181051684713614094411073901394');
+        if (!defaultLight) {
+            defaultLight = new THREE.AmbientLight(0xffffff);
+            defaultLight.name = '_1433554002181051684713614094411073901394';
+            _124324387819802023771476550153307121760.addObject(defaultLight);
+        } else {
+            defaultLight.color.set(0xffffff);
+        }
+        defaultLight.visible = true;
+    })();
+    (function() {
+        var defaultLight = _124324387819802023771476550153307121760.findObjectByName('_1413231199170667129609714301060068242');
+        if (!defaultLight) {
+            defaultLight = new THREE.DirectionalLight(0xffffff, 0.5);
+            defaultLight.name = '_1413231199170667129609714301060068242';
+            _124324387819802023771476550153307121760.addObject(defaultLight);
+        } else {
+            defaultLight.color.set(0xffffff);
+            defaultLight.intensity = 0.7;
+        }
+        defaultLight.visible = true;
+
+    })();
+    _124324387819802023771476550153307121760.showSkybox(false);
+
+    var sexName = 'man',
+        sizeName = 'big',
+        colorName = 'red';
+    var modelname = {
+        'man': {
+            'big': {
+                'white': 'Mesh12',
+                'blue': 'Mesh16',
+                'red': 'Mesh09'
+            },
+            'mid': {
+                'white': 'Mesh14',
+                'blue': 'Mesh15',
+                'red': 'Mesh11'
+            },
+            'small': {
+                'white': 'Mesh13',
+                'blue': 'Mesh17',
+                'red': 'Mesh10'
+            }
+        },
+        'woman': {
+            'big': {
+                'white': 'Mesh24,Mesh25,Mesh26',
+                'blue': 'Mesh33,Mesh34,Mesh35',
+                'red': 'Mesh36,Mesh37,Mesh38'
+            },
+            'mid': {
+                'white': 'Mesh18,Mesh19,Mesh23',
+                'blue': 'Mesh32,Mesh33,Mesh34',
+                'red': 'Mesh39,Mesh40,Mesh41'
+            },
+            'small': {
+                'white': 'Mesh20,Mesh21,Mesh22',
+                'blue': 'Mesh27,Mesh28,Mesh29',
+                'red': 'Mesh42,Mesh43,Mesh44'
+            }
+        },
+
+    };
+
+    function showModel(gender, size, color) {
+        _124324387819802023771476550153307121760.showModelByName('EMPALLMODEL', false);
+        var buf = modelname[gender][size][color];
+        var str = buf.split(",");
+        for (key in str) {
+            var name = str[key];
+            var obj = _124324387819802023771476550153307121760.findObjectByName(name);
+            if (obj)
+                obj.visible = true;
+        }
+    }
+
+} /*addChildrenItems end*/
+
+    var socket = io();
+    $('form').submit(function() {
+        socket.emit('chat message', $('#m').val());
+        $('#m').val('');
+        return false;
+    });
+    socket.on('chat message', function(msg) {
+        $('#messages').append($('<li>').text(msg));
+    });
+    socket.on('chat message', function(msg) {
+        $('#messages').append($('<li>').text(msg));
+    });
+
+$('#cloth-gender').change(function(event) {
+    var gender = $('#cloth-gender').val();
+    var size = $('#cloth-size').val();
+    var color = $('#cloth-color').val();
+    showModel(gender, size, color);
+    socket.emit('change sth', {'gender':gender,'size':size,'color':color});
+});
+$('#cloth-size').change(function(event) {
+    var gender = $('#cloth-gender').val();
+    var size = $('#cloth-size').val();
+    var color = $('#cloth-color').val();
+    showModel(gender, size, color);
+    socket.emit('change sth', {'gender':gender,'size':size,'color':color});
+});
+$('#cloth-color').change(function(event) {
+    var gender = $('#cloth-gender').val();
+    var size = $('#cloth-size').val();
+    var color = $('#cloth-color').val();
+    showModel(gender, size, color);
+    socket.emit('change sth', {'gender':gender,'size':size,'color':color});
+});
+
+socket.on('change sth', function(msg) {
+        showModel(msg.gender, msg.size, msg.color);
+    });
+
+</script>
